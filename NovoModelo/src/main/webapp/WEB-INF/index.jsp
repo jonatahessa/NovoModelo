@@ -18,7 +18,9 @@
         <title>Pizzaria Modelo</title>
     </head>
     <body>
-        <header class="static-header no-mobile menu-top">
+      <section class="container-fluid">
+
+        <header id="menu-desktop" class="row static-header menu-top">
             <div class="inside-header">
                 <nav>
                     <a href="#section1"><strong>Home</strong></a>
@@ -31,8 +33,8 @@
         </header>
 
 
-        <header id="menu-mobile" class="col-12 align-self-center menu-top">
-            <div class="row dropleft col-12 justify-content-end">
+        <div id="menu-mobile" class="menu-top row">
+            <div class="dropleft">
                 <button class="btn menu-drop col-3 menu-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-fluid" src="./_imagens/menu-mobile.png" alt=""></button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#section1">Home</a>
@@ -42,98 +44,99 @@
                     <a class="dropdown-item" href="#section5">Contato</a>
                 </div>
             </div>
-        </header>
-
-        <div id="inicio" class="row justify-content-center sessoes">
-            <div id="section1" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section1 padded">
-                <h1 class="fonte-lobster">Home</h1>
-                <hr/>
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <img class="img-fluid" src="./_imagens/pizzahome.jpg" alt="imagem de uma pizza">
-                    </div>
-                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                        <p>Tradicional na região, a <strong>PIZZARIA MODELO</strong> vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender à expectativa dos clientes” como sinônimo de qualidade.</p>
-                        <p>Com investimento constante nas instalações, produtos e serviços, faz com que a <strong>PIZZARIA MODELO</strong> seja considerada um novo clássico na terra das pizzarias.</p>
-                        <p>Todos os recursos são colocados à disposição dos funcionários, para que a filosofia desde a fundação continue sempre a ser: SERVIR PIZZAS COM CARINHO, DEDICAÇÃO E ALEGRIA.</p>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div id="section2" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section2 padded">
-                <h1 class="fonte-lobster">Promoções</h1>
-                <hr/>
-                <c:forEach var="promocao" items="${promocoes}">
-                    <div class="row justify-content-center">
-                        <div class="paineis col-xs-12 col-sm-12 col-md-8 col-lg-6 border border-danger text-center">
-                            <h2 class="text-danger fonte-acme">${promocao.nome}</h2>
-                            <h3 class="text-dark fonte-acme">${promocao.descricao}</h3>
-                            <h2 class="text-success fonte-acme">${promocao.preco}</h2>
+            <div id="inicio" class="row justify-content-center sessoes">
+                <div id="section1" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section1 padded">
+                    <h1 class="fonte-lobster">Home</h1>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <img class="img-fluid" src="./_imagens/pizzahome.jpg" alt="imagem de uma pizza">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <p>Tradicional na região, a <strong>PIZZARIA MODELO</strong> vem unindo a tradição da pizza com a sofisticação informal. E não para de crescer, evoluir, adotando sempre o lema: “Atender à expectativa dos clientes” como sinônimo de qualidade.</p>
+                            <p>Com investimento constante nas instalações, produtos e serviços, faz com que a <strong>PIZZARIA MODELO</strong> seja considerada um novo clássico na terra das pizzarias.</p>
+                            <p>Todos os recursos são colocados à disposição dos funcionários, para que a filosofia desde a fundação continue sempre a ser: SERVIR PIZZAS COM CARINHO, DEDICAÇÃO E ALEGRIA.</p>
                         </div>
                     </div>
-                </c:forEach>
+                </div>
             </div>
-        </div>
 
-        <div class="row justify-content-center">
-            <div id="section3" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section3 padded">
-                <h1 class="fonte-lobster">Cardápio</h1>
-                <hr/>
-                <div class="row justify-content-center">
-                    <div class="col-xs-12 col-sm-12 col-lg-8">
-                        <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-pizzas">
-                            <img class="col-5" src="./_imagens/pizzasalgada.png" alt="Foto de uma pizza salgada"><h3>Clique para abrir as Pizzas Salgadas</h3>
-                        </button>
+            <div class="row justify-content-center">
+                <div id="section2" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section2 padded">
+                    <h1 class="fonte-lobster">Promoções</h1>
+                    <hr/>
+                    <c:forEach var="promocao" items="${promocoes}">
+                        <div class="row justify-content-center">
+                            <div class="paineis col-xs-12 col-sm-12 col-md-8 col-lg-6 border border-danger text-center">
+                                <h2 class="text-danger fonte-acme">${promocao.nome}</h2>
+                                <h3 class="text-dark fonte-acme">${promocao.descricao}</h3>
+                                <h2 class="text-success fonte-acme">${promocao.preco}</h2>
+                            </div>
+                        </div>
+                    </c:forEach>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div id="section3" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section3 padded">
+                    <h1 class="fonte-lobster">Cardápio</h1>
+                    <hr/>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-pizzas">
+                                <img class="col-5" src="./_imagens/pizzasalgada.png" alt="Foto de uma pizza salgada"><h3>Clique para abrir as Pizzas Salgadas</h3>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-xs-12 col-sm-12 col-lg-8">
-                        <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-doces">
-                            <img class="col-5" src="./_imagens/pizzadoce.png" alt="Foto de uma pizza doce"><h3>Clique para abrir as Pizzas Doces</h3>
-                        </button>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-12 col-lg-8">
+                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-doces">
+                                <img class="col-5" src="./_imagens/pizzadoce.png" alt="Foto de uma pizza doce"><h3>Clique para abrir as Pizzas Doces</h3>
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row justify-content-center">
-                    <h1 class="text-center text-danger fonte-acme">FAZEMOS CALZONES DE QUALQUER SABOR!</h1>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div id="section4" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section4 padded">
-                <h1 class="fonte-lobster">Localização</h1>
-                <hr/>
-                <h4 class="text-center">Rua Dr. Abelardo Vergueiro Cesar, 132 - Vila Alexandria, São Paulo - SP</h4>
-                <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5021.877653908174!2d-46.67106914488145!3d-23.638162945045554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9946459dfceec7f3!2sPizzaria+Donatello!5e0!3m2!1spt-BR!2sbr!4v1520085393652" height="500px;" allowfullscreen></iframe>
-            </div>
-        </div>
-
-        <div class="row justify-content-center">
-            <div id="section5" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section5 padded">
-                <h1 class="fonte-lobster">Contato</h1>
-                <hr/>
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h2 class="text-center display-4">
-                            <a class="text-dark" href="tel:01150316244"><strong>5031-6244</strong></a><br/>
-                            <a class="text-dark" href="tel:01150319484"><strong>5031-9484</strong></a><br/>
-                            <a class="text-dark" href="tel:011982969045"><strong>98296-9045</strong></a>
-                            <img class="col-1" src="./_imagens/whatsapp.png" alt="whatsapp">
-                        </h2>
-                        <h3 class="text-center">Horário de funcionamento</h3>
-                        <h4 class="text-center">Domingo a Quinta das 18:00h às 23:30h</h4>
-                        <h4 class="text-center">Sexta e Sábado das 18:00h às 00:00h</h4>
-                        <p class="text-center">Copyright (c) Pizzaria Donatello Copyright Holder All Rights Reserved.</p>
-                        <p class="text-center">Developed by Jonata Hessa</p>
+                    <div class="row justify-content-center">
+                        <h1 class="text-center text-danger fonte-acme">FAZEMOS CALZONES DE QUALQUER SABOR!</h1>
                     </div>
                 </div>
             </div>
+
+            <div class="row justify-content-center">
+                <div id="section4" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section4 padded">
+                    <h1 class="fonte-lobster">Localização</h1>
+                    <hr/>
+                    <h4 class="text-center">Rua Dr. Abelardo Vergueiro Cesar, 132 - Vila Alexandria, São Paulo - SP</h4>
+                    <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5021.877653908174!2d-46.67106914488145!3d-23.638162945045554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9946459dfceec7f3!2sPizzaria+Donatello!5e0!3m2!1spt-BR!2sbr!4v1520085393652" height="500px;" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div id="section5" class="col-xs-12 col-sm-12 col-md-10 col-lg-8 backgrounded section5 padded">
+                    <h1 class="fonte-lobster">Contato</h1>
+                    <hr/>
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <h2 class="text-center display-4">
+                                <a class="text-dark" href="tel:01150316244"><strong>5031-6244</strong></a><br/>
+                                <a class="text-dark" href="tel:01150319484"><strong>5031-9484</strong></a><br/>
+                                <a class="text-dark" href="tel:011982969045"><strong>98296-9045</strong></a>
+                                <img class="col-1" src="./_imagens/whatsapp.png" alt="whatsapp">
+                            </h2>
+                            <h3 class="text-center">Horário de funcionamento</h3>
+                            <h4 class="text-center">Domingo a Quinta das 18:00h às 23:30h</h4>
+                            <h4 class="text-center">Sexta e Sábado das 18:00h às 00:00h</h4>
+                            <p class="text-center">Copyright (c) Pizzaria Donatello Copyright Holder All Rights Reserved.</p>
+                            <p class="text-center">Developed by Jonata Hessa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <div class="modal fade" id="modal-pizzas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
