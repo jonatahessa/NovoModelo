@@ -85,7 +85,7 @@
                     <hr/>
                     <div class="row justify-content-center">
                         <div class="col-xs-12 col-sm-12 col-lg-8">
-                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-pizzas">
+                            <button type="button" class="col-12 botoes-cardapio" data-toggle="modal" data-target="#modal-pizzas">
                                 <img class="col-5" src="./_imagens/pizzasalgada.png" alt="Foto de uma pizza salgada"><h3>Clique para abrir as Pizzas Salgadas</h3>
                             </button>
                         </div>
@@ -93,14 +93,10 @@
 
                     <div class="row justify-content-center">
                         <div class="col-xs-12 col-sm-12 col-lg-8">
-                            <button type="button" class="col-12 botoes-menu" data-toggle="modal" data-target="#modal-doces">
+                            <button type="button" class="col-12 botoes-cardapio" data-toggle="modal" data-target="#modal-doces">
                                 <img class="col-5" src="./_imagens/pizzadoce.png" alt="Foto de uma pizza doce"><h3>Clique para abrir as Pizzas Doces</h3>
                             </button>
                         </div>
-                    </div>
-
-                    <div class="row justify-content-center">
-                        <h1 class="text-center text-danger fonte-acme">FAZEMOS CALZONES DE QUALQUER SABOR!</h1>
                     </div>
                 </div>
             </div>
@@ -129,7 +125,7 @@
                             <h3 class="text-center">Horário de funcionamento</h3>
                             <h4 class="text-center">Domingo a Quinta das 18:00h às 23:30h</h4>
                             <h4 class="text-center">Sexta e Sábado das 18:00h às 00:00h</h4>
-                            <p class="text-center">Copyright (c) Pizzaria Donatello Copyright Holder All Rights Reserved.</p>
+                            <p class="text-center">Copyright (c) Pizzaria Modelo Copyright Holder All Rights Reserved.</p>
                             <p class="text-center">Developed by Jonata Hessa</p>
                         </div>
                     </div>

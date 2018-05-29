@@ -106,6 +106,12 @@ body {
     }
 }
 
+.botoes-cardapio {
+  background-color: transparent;
+  border: none;
+  margin-top: 50px;
+}
+
 #inicio {
   padding-top: 80px;
 }
