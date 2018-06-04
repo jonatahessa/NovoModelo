@@ -19,9 +19,8 @@
     </head>
     <body>
       <section class="container-fluid">
-
-        <header id="menu-desktop" class="row static-header menu-top">
-            <div class="inside-header">
+        <header id="menu-desktop" class="row menu-top justify-content-end">
+            <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 inside-header">
                 <nav>
                     <a href="#section1"><strong>Home</strong></a>
                     <a href="#section2"><strong>Promoções</strong></a>

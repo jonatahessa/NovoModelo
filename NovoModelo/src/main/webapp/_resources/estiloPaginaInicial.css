@@ -18,10 +18,9 @@ body {
       opacity: 0.9;
   }
 
-  #menu-desktop .inside-header {
+  .inside-header {
       max-width: 900px;
       padding: 15px 30px;
-      margin: 0 auto;
       overflow: hidden;
       box-sizing: border-box;
   }
@@ -30,7 +29,7 @@ body {
       margin: 0 auto;
   }
 
-    #menu-desktop .inside-header nav a {
+    .inside-header nav a {
         display: inline-block;
         color: #666666;
         text-decoration: none;
@@ -38,32 +37,14 @@ body {
         cursor: pointer;
     }
 
-    #menu-desktop .inside-header nav {
+    .inside-header nav {
         padding: 3px 0;
         margin: 0 auto;
-        text-align: right;
+        text-align: center;
     }
 
-    #menu-desktop .inside-header nav a:not(:last-of-type) {
+    .inside-header nav a:not(:last-of-type) {
         padding-right: 30px;
-    }
-
-    #menu-desktop .fheader__container nav {
-        padding: 3px 0;
-        float: right;
-        text-align: right;
-    }
-
-    #menu-desktop .fheader__container nav a {
-        display: inline-block;
-        color: #666666;
-        text-decoration: none;
-        font-size: 14px;
-        cursor: pointer;
-    }
-
-    .donatello {
-      font-size: 100px;
     }
 
     .padded {
